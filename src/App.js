@@ -11,6 +11,7 @@ import QuestionPage from './components/QuestionPage';
 import QuestionResult from './components/QuestionResult';
 import AddQuestion from './components/AddQuestion';
 import Leaderboard from './components/Leaderboard';
+import Error from './components/Error';
 
 class App extends Component {
   componentDidMount() {
@@ -43,6 +44,7 @@ class App extends Component {
                     />
                     <Route path="/add" component={AddQuestion} />
                     <Route path="/leaderboard" component={Leaderboard} />
+                    <Route path="/not-found" component={Error} />
                   </Switch>
 
                 </>

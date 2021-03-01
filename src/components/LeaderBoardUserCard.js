@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Card , Col, Image, Table , Badge} from 'react-bootstrap';
+import { Row, Card , Col, Image, Table} from 'react-bootstrap';
 
 class LeaderBoardUserCard extends Component {
 

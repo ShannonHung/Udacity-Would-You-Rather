@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { Col, Image, Form, Container, Row } from 'react-bootstrap';
+import { Form, Row } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import '../css/login.css'
 import { withRouter } from "react-router-dom";
@@ -14,7 +14,7 @@ class Login extends Component {
 
     handleChange = (e) => {
         const id = e.target.value;
-        
+
         this.setState(
             {
                 authedUser: id
@@ -28,11 +28,11 @@ class Login extends Component {
         console.log("test => ", this.state.authedUser);
 
         if (this.state.authedUser) {
-          this.props.dispatch(loginUser(this.state.authedUser));
-          this.props.history.push("/");
+            this.props.dispatch(loginUser(this.state.authedUser));
+            this.props.history.push("/");
         } else {
-          this.props.history.push("/not-found");
-        }        
+            this.props.history.push("/not-found");
+        }
     };
 
 

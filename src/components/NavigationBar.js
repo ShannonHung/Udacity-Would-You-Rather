@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import { connect } from "react-redux";
-import { Navbar, Nav, Button, Form, FormControl } from 'react-bootstrap';
+import { Navbar, Nav,  } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { logoutUser } from '../actions/authedUser';
 import icon from '../img/logo.jpg'

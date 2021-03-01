@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import { withRouter, Link } from 'react-router-dom';
-import { Col, Card, Button, Image } from 'react-bootstrap';
+import { Col, Card, Image } from 'react-bootstrap';
 class QuestionItem extends Component {
 
     styles = {
